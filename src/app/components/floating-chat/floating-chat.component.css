@@ -1,0 +1,103 @@
+
+/* body, */
+section,
+button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+body {
+   /* height: 100vh; */
+}
+section {
+   /* width: 155px; */
+   justify-content: flex-end;
+}
+.chat {
+   font-size: 18px;
+   line-height: 1.5;
+   color: #fff;
+   background-color: #1a73e8;
+   width: 53px;
+   height: 53px;
+   padding: 0 15px;
+   border: none;
+   border-radius: 53px;
+   box-sizing: border-box;
+   box-shadow: none;
+   outline: none;
+   /* transition: all 0.5s ease-in-out; */
+   cursor: pointer;
+   justify-content: flex-start;
+   overflow: hidden;
+}
+.fa {
+   font-size: 1.5em;
+   margin-right: 12px;
+}
+label {
+   flex: 0 0 auto;
+   cursor: pointer;
+}
+button:hover {
+   /* width: 150px; */
+}
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 400px;
+    height: 60vh;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: -285%;
+    margin-left: -200px;
+    border-style:solid;
+    border-width:1px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 94%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

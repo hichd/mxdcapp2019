@@ -1,0 +1,56 @@
+
+#inner-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 4px;
+}
+#inner-grid > div {
+  background: lightgreen;
+  padding: 8px;
+}
+.listbtn{
+  height: 45px;
+  background: lightblue;
+  overflow: auto;
+  border-right-width: 10px;
+  border-right-style: solid;
+  font-family:Arial, "Helvetica", sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius: 7px;
+  text-align : left;
+  padding-bottom: 15px;
+}
+.applications-filtration{
+  grid-area: afilter;
+}
+.applications-reuse, .applications-maintain, .applications-decommission, .applications-invest{
+  margin-top:2px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 100px;
+  border-color: rgb(0, 0, 100);
+  margin-left:2px;
+}
+/* .applications-reuse{
+  background:green;
+} */
+.applications-maintain{
+  background:red;
+}
+.applications-decommission{
+  background:grey;
+}
+.applications-invest{
+  background:blue;
+}
+#filter{
+  cursor: pointer;
+  font-size: 12px;
+  color:white;
+  height: 31px;
+}
+#reset{
+  float: right;
+}

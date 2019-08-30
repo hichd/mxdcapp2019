@@ -1,0 +1,29 @@
+:host{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+}
+.processes-filtration{
+    grid-area: pfilter;
+}
+.processes-create{
+  background:blue;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.processes-existing{
+  background:green;
+}
+.processes-upgrade{
+  background:orange;
+}
+.processes-retire{
+  background:grey;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#filter{
+  cursor: pointer;
+  font-size: 12px;
+  color:white;
+}

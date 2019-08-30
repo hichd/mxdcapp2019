@@ -1,0 +1,5703 @@
+[
+    {
+        "barometerNo": "070700000J32",
+        "sources": "Aetm Travel App",
+        "sourceSystems": [
+            {
+                "name": "Aetm Travel App"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000P86"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MXAPPS.NDF"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000L9C"
+            }
+        ],
+        "connection": "Airline Ticket, Hotel Booking, Travel, Travel Fees",
+        "type": "Direct Call",
+        "connectionType": "Manual",
+        "pattern": "Send/Receive",
+        "transport": "HTTPS",
+        "data": [
+            {
+                "name": "Airline Ticket"
+            },
+            {
+                "name": "Hotel Booking"
+            },
+            {
+                "name": "Travel"
+            },
+            {
+                "name": "Travel Fees"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003HC"
+            },
+            {
+                "barometerNo": "0744000003HD"
+            },
+            {
+                "barometerNo": "074400000308"
+            },
+            {
+                "barometerNo": "0744000003HG"
+            }
+        ],
+        "created": "28/05/2018",
+        "description": "Interface for the travel data.\nFlat file from Amex is loaded weekly for EMEA and Americas and daily for Singapore.",
+        "allDataBns": [
+            {
+                "bn": "0744000003HG",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000003HC",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "074400000308",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000003HD",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000K0B",
+        "sources": "Digimind",
+        "sourceSystems": [
+            {
+                "name": "Digimind"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000Q8B"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Yammer"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000Q8D"
+            }
+        ],
+        "connection": "Social Media Posts",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "21/03/2019",
+        "description": "Social Media Posts",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000J9D",
+        "sources": "Fit For Banking",
+        "sourceSystems": [
+            {
+                "name": "Fit For Banking"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000PX9"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Qlik Sense"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000PMK"
+            }
+        ],
+        "connection": "FFB Learning Histories, FFB trainings",
+        "type": "Database",
+        "connectionType": null,
+        "pattern": "Database",
+        "transport": "",
+        "data": [
+            {
+                "name": "FFB Learning Histories"
+            },
+            {
+                "name": "FFB trainings"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003KX"
+            },
+            {
+                "barometerNo": "0744000003KW"
+            }
+        ],
+        "created": "23/11/2018",
+        "description": "Create Dashboard from FFB data integrated in our database",
+        "allDataBns": [
+            {
+                "bn": "0744000003KX",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000003KW",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J9C",
+        "sources": "Fit For Banking",
+        "sourceSystems": [
+            {
+                "name": "Fit For Banking"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000PX9"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SF.Learning"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000PLV"
+            }
+        ],
+        "connection": "FFB Learning Histories, FFB trainings",
+        "type": "Web Service",
+        "connectionType": "ESB",
+        "pattern": "API Call",
+        "transport": "HTTPS",
+        "data": [
+            {
+                "name": "FFB Learning Histories"
+            },
+            {
+                "name": "FFB trainings"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003KX"
+            },
+            {
+                "barometerNo": "0744000003KW"
+            }
+        ],
+        "created": "23/11/2018",
+        "description": "Interface between FFB and Successfactors to integrate Learning histories",
+        "allDataBns": [
+            {
+                "bn": "0744000003KX",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000003KW",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000K01",
+        "sources": "GQAF Integration Bot",
+        "sourceSystems": [
+            {
+                "name": "GQAF Integration Bot"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000Q89"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "GQAF"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KKZ"
+            }
+        ],
+        "connection": "Changelist Owner",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "21/03/2019",
+        "description": "Changelist Owner",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000K02",
+        "sources": "GQAF Integration Bot",
+        "sourceSystems": [
+            {
+                "name": "GQAF Integration Bot"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000Q89"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "GQAF"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KKZ"
+            }
+        ],
+        "connection": "Mails",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "21/03/2019",
+        "description": "Mails",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000K06",
+        "sources": "GQAF Integration Bot",
+        "sourceSystems": [
+            {
+                "name": "GQAF Integration Bot"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000Q89"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "GQAF"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KKZ"
+            }
+        ],
+        "connection": "Post Events",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "21/03/2019",
+        "description": "Post Events",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000J2T",
+        "sources": "GQAF.Mx Licenses",
+        "sourceSystems": [
+            {
+                "name": "GQAF.Mx Licenses"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000PM2"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MXGEN"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ9"
+            }
+        ],
+        "connection": "Mx Licenses",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "16/05/2018",
+        "description": "Mx Licenses",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000HPS",
+        "sources": "GQAF.Production",
+        "sourceSystems": [
+            {
+                "name": "GQAF.Production"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHM"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MXEM"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHJ"
+            }
+        ],
+        "connection": "Packages",
+        "type": "",
+        "connectionType": "JMSQUEUE",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Packages"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZQ"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "GQAF to EM passing Packages",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZQ",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQ8",
+        "sources": "GQAF.Production",
+        "sourceSystems": [
+            {
+                "name": "GQAF.Production"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHM"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MXPI"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ0"
+            }
+        ],
+        "connection": "Packages",
+        "type": "",
+        "connectionType": "JMSQUEUE",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Packages"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZQ"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXPI to GQAF passing Packages",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZQ",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQ7",
+        "sources": "GQAF.Production",
+        "sourceSystems": [
+            {
+                "name": "GQAF.Production"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHM"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MXPI"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ0"
+            }
+        ],
+        "connection": "Project Sources",
+        "type": "",
+        "connectionType": "JMSQUEUE",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Project Sources"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZS"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "GQAF to MXPI passing Project Source",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZS",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000JWB",
+        "sources": "GQAF.Version Management",
+        "sourceSystems": [
+            {
+                "name": "GQAF.Version Management"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHR"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Peoplesoft MxCRM"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJD"
+            }
+        ],
+        "connection": "MergeRequest",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "API Call",
+        "transport": "",
+        "data": [
+            {
+                "name": "MergeRequest"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003CB"
+            }
+        ],
+        "created": "15/03/2019",
+        "description": "Merge Request",
+        "allDataBns": [
+            {
+                "bn": "0744000003CB",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HPR",
+        "sources": "GQAF.Version Management",
+        "sourceSystems": [
+            {
+                "name": "GQAF.Version Management"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHR"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MXEM"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHJ"
+            }
+        ],
+        "connection": "Project Sources",
+        "type": "",
+        "connectionType": "JMSQUEUE",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Project Sources"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZS"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "GQAF to EM passing ProjectSources",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZS",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000JW8",
+        "sources": "GQAF.Version Management",
+        "sourceSystems": [
+            {
+                "name": "GQAF.Version Management"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHR"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PeopleSoft Defect Management"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LN9"
+            }
+        ],
+        "connection": "Version",
+        "type": "",
+        "connectionType": "PointToPoint",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Version"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003BP"
+            }
+        ],
+        "created": "15/03/2019",
+        "description": "Version",
+        "allDataBns": [
+            {
+                "bn": "0744000003BP",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J3H",
+        "sources": "GQAF.Version Validation Management",
+        "sourceSystems": [
+            {
+                "name": "GQAF.Version Validation Management"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHN"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Jenkins"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000PNC"
+            }
+        ],
+        "connection": "Push Code Health Pipeline from Version Validation Panel",
+        "type": "Direct Call",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "14/06/2018",
+        "description": "Push Code Health Pipeline from Version Validation Panel",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000JW9",
+        "sources": "GQAF.Version Validation Management",
+        "sourceSystems": [
+            {
+                "name": "GQAF.Version Validation Management"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHN"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Mxjira"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHT"
+            }
+        ],
+        "connection": "Version",
+        "type": "Web Service",
+        "connectionType": "ESB",
+        "pattern": "API Call",
+        "transport": "HTTP",
+        "data": [
+            {
+                "name": "Version"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003BP"
+            }
+        ],
+        "created": "15/03/2019",
+        "description": "Version",
+        "allDataBns": [
+            {
+                "bn": "0744000003BP",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J4Q",
+        "sources": "Itjira, Mxjira",
+        "sourceSystems": [
+            {
+                "name": "Itjira"
+            },
+            {
+                "name": "Mxjira"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLK"
+            },
+            {
+                "barometerNo": "071800000LHT"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "ServiceNow"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000PQ7"
+            }
+        ],
+        "connection": "Issues",
+        "type": "Web Service",
+        "connectionType": "ESB",
+        "pattern": "API Call",
+        "transport": "HTTP",
+        "data": [
+            {
+                "name": "Issues"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002WQ"
+            }
+        ],
+        "created": "22/08/2018",
+        "description": "Return jiraid to servicenow",
+        "allDataBns": [
+            {
+                "bn": "0744000002WQ",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J3R",
+        "sources": "Jenkins",
+        "sourceSystems": [
+            {
+                "name": "Jenkins"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000PNC"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "connection": "Continuous Integration/Continuous Deployment",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "28/06/2018",
+        "description": "Continuous Integration/Continuous Deployment",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000HQ1",
+        "sources": "KDS TRAVEL",
+        "sourceSystems": [
+            {
+                "name": "KDS TRAVEL"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LNB"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MXAPPS.NDF"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000L9C"
+            }
+        ],
+        "connection": "Travel",
+        "type": "",
+        "connectionType": "DBLink",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Travel"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "074400000308"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "KDS Travel to MXAPP.NDF passing Travel",
+        "allDataBns": [
+            {
+                "bn": "074400000308",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HR2",
+        "sources": "Marketo",
+        "sourceSystems": [
+            {
+                "name": "Marketo"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KL8"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "connection": "Campaign, Lead",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Campaign"
+            },
+            {
+                "name": "Lead"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002Z7"
+            },
+            {
+                "barometerNo": "0744000002ZL"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Marketo to PEGASFA passing Campaign",
+        "allDataBns": [
+            {
+                "bn": "0744000002Z7",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000002ZL",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HR0",
+        "sources": "Marketo, PEGA SFA",
+        "sourceSystems": [
+            {
+                "name": "Marketo"
+            },
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KL8"
+            },
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Marketo"
+            },
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KL8"
+            },
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "connection": "Contact",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Contact"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002Z9"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Marketo to PEGASFA passing Contact",
+        "allDataBns": [
+            {
+                "bn": "0744000002Z9",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HR1",
+        "sources": "Marketo, PEGA SFA",
+        "sourceSystems": [
+            {
+                "name": "Marketo"
+            },
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KL8"
+            },
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Marketo"
+            },
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KL8"
+            },
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "connection": "Lead",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Lead"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZL"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Marketo to PEGASFA passing Lead",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZL",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J2P",
+        "sources": "Microsoft Exchange",
+        "sourceSystems": [
+            {
+                "name": "Microsoft Exchange"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KL6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SF.Employee"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LN3"
+            }
+        ],
+        "connection": "Employee (Internal)",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "API Call",
+        "transport": "",
+        "data": [
+            {
+                "name": "Employee (Internal)"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZG"
+            }
+        ],
+        "created": "09/05/2018",
+        "description": "Username and Email Address",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZG",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J3K",
+        "sources": "Microsoft Outlook",
+        "sourceSystems": [
+            {
+                "name": "Microsoft Outlook"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLH"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "connection": "Case",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "28/06/2018",
+        "description": "Case",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000HF8",
+        "sources": "Microsoft Outlook",
+        "sourceSystems": [
+            {
+                "name": "Microsoft Outlook"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLH"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MxCRM.CaseManagement"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJL"
+            }
+        ],
+        "connection": "Case Notes",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "API Call",
+        "transport": "HTTP",
+        "data": [
+            {
+                "name": "Case Notes"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002WS"
+            }
+        ],
+        "created": "26/04/2017",
+        "description": "Outlook CRM",
+        "allDataBns": [
+            {
+                "bn": "0744000002WS",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000K07",
+        "sources": "Microsoft Outlook",
+        "sourceSystems": [
+            {
+                "name": "Microsoft Outlook"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLH"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "connection": "Notes",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "21/03/2019",
+        "description": "Notes",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000HQ9",
+        "sources": "MXAPPS",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9D"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Cost Centers",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Cost Centers"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZC"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS  to PSA Resource Planning passing Cost Centers",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZC",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQD",
+        "sources": "MXAPPS",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9D"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Expenses",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Expenses"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZJ"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS to PSA Resource Planning passing Expenses",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZJ",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HPZ",
+        "sources": "MXAPPS",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9D"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PegaCS.ModuleMap"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHV"
+            }
+        ],
+        "connection": "MXAPPS to Modulemap passing Project",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "28/03/2018",
+        "description": "MXAPPS to Modulemap passing Project",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000HQG",
+        "sources": "MXAPPS",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9D"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "MXAPPS to PSA Resource Planning passing Projects",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "28/03/2018",
+        "description": "MXAPPS to PSA Resource Planning passing Projects",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000HRD",
+        "sources": "MXAPPS.Expenses",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.Expenses"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LMX"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SAGE"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ8"
+            }
+        ],
+        "connection": "Expenses",
+        "type": "File",
+        "connectionType": null,
+        "pattern": "Send/Receive",
+        "transport": "",
+        "data": [
+            {
+                "name": "Expenses"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZJ"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS.Expenses to SAGE passing Expenses",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZJ",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HRC",
+        "sources": "MXAPPS.Expenses",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.Expenses"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LMX"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SAGE"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ8"
+            }
+        ],
+        "connection": "Travel",
+        "type": "File",
+        "connectionType": null,
+        "pattern": "Send/Receive",
+        "transport": "",
+        "data": [
+            {
+                "name": "Travel"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "074400000308"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS.Expenses to SAGE passing Travel",
+        "allDataBns": [
+            {
+                "bn": "074400000308",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQ5",
+        "sources": "MXAPPS.NDF",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.NDF"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9C"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MXAPPS.Travel"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000L9H"
+            }
+        ],
+        "connection": "Expenses",
+        "type": "",
+        "connectionType": "DBLink",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Expenses"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZJ"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS.NDF to MXAPP Travel passing Expenses",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZJ",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HR8",
+        "sources": "MXAPPS.ORG",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.ORG"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLB"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SAGE"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ8"
+            }
+        ],
+        "connection": "Cost Centers",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Cost Centers"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZC"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS Org to SAGE passing Cost Center",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZC",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J3G",
+        "sources": "MXAPPS.ORG",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.ORG"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLB"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "connection": "Employee (External), Employee (Internal), Teams/Departments",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Employee (External)"
+            },
+            {
+                "name": "Employee (Internal)"
+            },
+            {
+                "name": "Teams/Departments"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003C2"
+            },
+            {
+                "barometerNo": "0744000002ZG"
+            },
+            {
+                "barometerNo": "0744000002W7"
+            }
+        ],
+        "created": "14/06/2018",
+        "description": "ORG-ERP Interface to copy Employee and Team information for Time reporting",
+        "allDataBns": [
+            {
+                "bn": "0744000002W7",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000002ZG",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000003C2",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HRK",
+        "sources": "MXAPPS.ORG",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.ORG"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLB"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "connection": "Localities",
+        "type": "",
+        "connectionType": "Manual",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Localities"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZN"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS.Org to Peoplesoft ERP passing Localities",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZN",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQJ",
+        "sources": "MXAPPS.ORG",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.ORG"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLB"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Resource (External)",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Resource (External)"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZX"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS.Org to PSA Resource Planning passing Resources (external)",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZX",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HR7",
+        "sources": "MXAPPS.ORG",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.ORG"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLB"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SAGE"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ8"
+            }
+        ],
+        "connection": "Teams",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Teams"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "074400000305"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS Org to SAGE passing Team",
+        "allDataBns": [
+            {
+                "bn": "074400000305",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HRJ",
+        "sources": "MXAPPS.Planning",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.Planning"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9F"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "connection": "Public Holidays",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Public Holidays"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZV"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS.Planning to Peoplesoft ERP passing Public Holidays",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZV",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HRL",
+        "sources": "MXAPPS.Projects",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.Projects"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9G"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "connection": "Activities, Project Activities",
+        "type": "Web Service",
+        "connectionType": "DBLink",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Activities"
+            },
+            {
+                "name": "Project Activities"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002Z4"
+            },
+            {
+                "barometerNo": "0744000002W5"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS Projects to Peoplesoft ERP passing Activities",
+        "allDataBns": [
+            {
+                "bn": "0744000002Z4",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000002W5",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HRN",
+        "sources": "MXAPPS.Projects",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.Projects"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9G"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "MXAPPS Projects to PSA Resource Planning passing Projects",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "28/03/2018",
+        "description": "MXAPPS Projects to PSA Resource Planning passing Projects",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000JWK",
+        "sources": "MXAPPS.Projects",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.Projects"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9G"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PEGA SFA.Opportunity Management"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ4"
+            }
+        ],
+        "connection": "Opportunity",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "API Call",
+        "transport": "",
+        "data": [
+            {
+                "name": "Opportunity"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZP"
+            }
+        ],
+        "created": "15/03/2019",
+        "description": "Opportunity",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZP",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000JWJ",
+        "sources": "MXAPPS.Projects",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.Projects"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9G"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "connection": "Project Activities",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "API Call",
+        "transport": "",
+        "data": [
+            {
+                "name": "Project Activities"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002W5"
+            }
+        ],
+        "created": "15/03/2019",
+        "description": "Project Activities",
+        "allDataBns": [
+            {
+                "bn": "0744000002W5",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HRM",
+        "sources": "MXAPPS.Projects",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.Projects"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9G"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "connection": "Project Manager",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Project Manager"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZR"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS Projects to Peoplesoft ERP passing Project Manager",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZR",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQ6",
+        "sources": "MXAPPS.Projects",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.Projects"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9G"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Mxjira"
+            },
+            {
+                "name": "PEGA SFA.Opportunity Management"
+            },
+            {
+                "name": "PegaCS.Projects"
+            },
+            {
+                "name": "PeopleSoft ERP"
+            },
+            {
+                "name": "ServiceNow"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHT"
+            },
+            {
+                "barometerNo": "071800000LJ4"
+            },
+            {
+                "barometerNo": "071800000LXB"
+            },
+            {
+                "barometerNo": "071800000LHZ"
+            },
+            {
+                "barometerNo": "071800000PQ7"
+            }
+        ],
+        "connection": "Project, Projects",
+        "type": "Web Service",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Project"
+            },
+            {
+                "name": "Projects"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002W2"
+            },
+            {
+                "barometerNo": "0744000002ZH"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS Projects to Peoplesoft ERP passing Project",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZH",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000002W2",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQW",
+        "sources": "MXAPPS.Projects",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.Projects"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9G"
+            }
+        ],
+        "targetSystems": [],
+        "targetSystemBns": [],
+        "connection": "Projects",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Projects"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZH"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS Projects to PegaCS CRM passing ERP Projects",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZH",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000KDZ",
+        "sources": "MXAPPS.Projects",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.Projects"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9G"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SF.Learning"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000PLV"
+            }
+        ],
+        "connection": "Projects",
+        "type": "File",
+        "connectionType": null,
+        "pattern": "Staged File",
+        "transport": "",
+        "data": [
+            {
+                "name": "Projects"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZH"
+            }
+        ],
+        "created": "29/07/2019",
+        "description": "Create Projects in learning module as account codes",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZH",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HRW",
+        "sources": "MXAPPS.Projects",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.Projects"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9G"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "connection": "Services Invoice Pro Forma",
+        "type": "",
+        "connectionType": "Manual",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Services Invoice Pro Forma"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "074400000301"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS Projects to Peoplesoft ERP passing Services Invoice Pro Forma(Manual)",
+        "allDataBns": [
+            {
+                "bn": "074400000301",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J5C",
+        "sources": "MXAPPS.VAC",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.VAC"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9J"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SagePaie X3 People"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000PPT"
+            }
+        ],
+        "connection": "Leave/time",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "05/10/2018",
+        "description": "Leave/time",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000HRH",
+        "sources": "MXAPPS.VAC",
+        "sourceSystems": [
+            {
+                "name": "MXAPPS.VAC"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000L9J"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "connection": "Vacation/Leaves",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Vacation/Leaves"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZM"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXAPPS.VAC to Peoplesoft ERP passing Leaves/Vacations",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZM",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J3M",
+        "sources": "MxCRM.CaseManagement, PegaCS",
+        "sourceSystems": [
+            {
+                "name": "MxCRM.CaseManagement"
+            },
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KJL"
+            },
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MxCRM.CaseManagement"
+            },
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJL"
+            },
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "connection": "CaseLinkDefects, Defect",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "CaseLinkDefects"
+            },
+            {
+                "name": "Defect"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003DV"
+            },
+            {
+                "barometerNo": "0744000002ZF"
+            }
+        ],
+        "created": "28/06/2018",
+        "description": "Defect",
+        "allDataBns": [
+            {
+                "bn": "0744000003DV",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000002ZF",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J3N",
+        "sources": "MxCRM.CaseManagement, PegaCS",
+        "sourceSystems": [
+            {
+                "name": "MxCRM.CaseManagement"
+            },
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KJL"
+            },
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PegaCS"
+            },
+            {
+                "name": "Peoplesoft MxCRM"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            },
+            {
+                "barometerNo": "071800000LJD"
+            }
+        ],
+        "connection": "Related Cases",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Related Cases"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002W4"
+            }
+        ],
+        "created": "28/06/2018",
+        "description": "Internal Case",
+        "allDataBns": [
+            {
+                "bn": "0744000002W4",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HPX",
+        "sources": "MXGEN",
+        "sourceSystems": [
+            {
+                "name": "MXGEN"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LJ9"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PegaCS.ModuleMap"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHV"
+            }
+        ],
+        "connection": "Asset Class",
+        "type": "",
+        "connectionType": "Manual",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Asset Class"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002Z5"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXGEN to Modulemap passing AssetClass",
+        "allDataBns": [
+            {
+                "bn": "0744000002Z5",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HPT",
+        "sources": "MXGEN",
+        "sourceSystems": [
+            {
+                "name": "MXGEN"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LJ9"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MXEM"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHJ"
+            }
+        ],
+        "connection": "Customer Rights",
+        "type": "",
+        "connectionType": "JMSQUEUE",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Customer Rights"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZD"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "MXGEN to EM passing Customerrights",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZD",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000K09",
+        "sources": "Mxintra",
+        "sourceSystems": [
+            {
+                "name": "Mxintra"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLF"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Success Factors"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KLC"
+            }
+        ],
+        "connection": "Operational Managers (APAC)",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "21/03/2019",
+        "description": "Operational Managers (APAC)",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000HQV",
+        "sources": "Mxjira",
+        "sourceSystems": [
+            {
+                "name": "Mxjira"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHT"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "GQAF.Version Validation Management"
+            },
+            {
+                "name": "Silk Central"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHN"
+            },
+            {
+                "barometerNo": "071800000KLS"
+            }
+        ],
+        "connection": "Issues",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Issues"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002WQ"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "JIRA to SILK Test Management passing Issues",
+        "allDataBns": [
+            {
+                "bn": "0744000002WQ",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQT",
+        "sources": "Mxjira",
+        "sourceSystems": [
+            {
+                "name": "Mxjira"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHT"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Silk Central"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KLS"
+            }
+        ],
+        "connection": "Requirements",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Requirements"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZW"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "JIRA to SILK Test Management passing Requirements",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZW",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000K0C",
+        "sources": "MxTime App",
+        "sourceSystems": [
+            {
+                "name": "MxTime App"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000Q8F"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "connection": "Timesheet",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "21/03/2019",
+        "description": "Timesheet",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000HRS",
+        "sources": "PEGA SFA",
+        "sourceSystems": [
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            },
+            {
+                "name": "Marketo"
+            },
+            {
+                "name": "MXAPPS.Projects"
+            },
+            {
+                "name": "PegaCS"
+            },
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            },
+            {
+                "barometerNo": "071800000KL8"
+            },
+            {
+                "barometerNo": "071800000L9G"
+            },
+            {
+                "barometerNo": "071800000KJK"
+            },
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "connection": "Account",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Account"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002Z3"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "SFA to MxCRM Case Management passing Account",
+        "allDataBns": [
+            {
+                "bn": "0744000002Z3",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J3Q",
+        "sources": "PEGA SFA",
+        "sourceSystems": [
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "connection": "Client Contacts",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "28/06/2018",
+        "description": "Client Contacts",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000JWF",
+        "sources": "PEGA SFA",
+        "sourceSystems": [
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Marketo"
+            },
+            {
+                "name": "MXAPPS"
+            },
+            {
+                "name": "PegaCS"
+            },
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KL8"
+            },
+            {
+                "barometerNo": "071800000L9D"
+            },
+            {
+                "barometerNo": "071800000KJK"
+            },
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "connection": "Competitors",
+        "type": "Web Service",
+        "connectionType": "ESB",
+        "pattern": "API Call",
+        "transport": "",
+        "data": [
+            {
+                "name": "Competitors"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002W9"
+            }
+        ],
+        "created": "15/03/2019",
+        "description": "Competitors",
+        "allDataBns": [
+            {
+                "bn": "0744000002W9",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HRT",
+        "sources": "PEGA SFA",
+        "sourceSystems": [
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Marketo"
+            },
+            {
+                "name": "MXAPPS.Projects"
+            },
+            {
+                "name": "PegaCS"
+            },
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KL8"
+            },
+            {
+                "barometerNo": "071800000L9G"
+            },
+            {
+                "barometerNo": "071800000KJK"
+            },
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "connection": "Customer",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Customer"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002Z8"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "SFA to MxCRM Case Management passing Company",
+        "allDataBns": [
+            {
+                "bn": "0744000002Z8",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000K00",
+        "sources": "PEGA SFA",
+        "sourceSystems": [
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Office365"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000Q88"
+            }
+        ],
+        "connection": "Email Attachment",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "21/03/2019",
+        "description": "Email Attachment",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000J3P",
+        "sources": "PEGA SFA",
+        "sourceSystems": [
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "connection": "Instance",
+        "type": "Web Service",
+        "connectionType": "ESB",
+        "pattern": "API Call",
+        "transport": "HTTP",
+        "data": [
+            {
+                "name": "Instance"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZK"
+            }
+        ],
+        "created": "28/06/2018",
+        "description": "Instance",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZK",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HR5",
+        "sources": "PEGA SFA",
+        "sourceSystems": [
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "connection": "Instance",
+        "type": "Web Service",
+        "connectionType": "ESB",
+        "pattern": "API Call",
+        "transport": "",
+        "data": [
+            {
+                "name": "Instance"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZK"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to PEGASFA Account passing Instance",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZK",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQF",
+        "sources": "PEGA SFA",
+        "sourceSystems": [
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Opportunity",
+        "type": "Web Service",
+        "connectionType": "ESB",
+        "pattern": "API Call",
+        "transport": "",
+        "data": [
+            {
+                "name": "Opportunity"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZP"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Pega to PSA Resource Planning passing Opportunity",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZP",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HRP",
+        "sources": "PEGA SFA",
+        "sourceSystems": [
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Pega SFA to PSA Resource Planning passing Projects",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "28/03/2018",
+        "description": "Pega SFA to PSA Resource Planning passing Projects",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000J3F",
+        "sources": "PEGA SFA",
+        "sourceSystems": [
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Qlik Nprinting"
+            },
+            {
+                "name": "Qlikview"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000PML"
+            },
+            {
+                "barometerNo": "071800000KLM"
+            }
+        ],
+        "connection": "Product Catalog",
+        "type": "File",
+        "connectionType": null,
+        "pattern": "Send/Receive",
+        "transport": "",
+        "data": [
+            {
+                "name": "Product Catalog"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "07440000031M"
+            }
+        ],
+        "created": "13/06/2018",
+        "description": "Demo for Joe S",
+        "allDataBns": [
+            {
+                "bn": "07440000031M",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQC",
+        "sources": "PEGA SFA",
+        "sourceSystems": [
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Prospects",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Prospects"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZT"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Pega to PSA Resource Planning passing Prospects",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZT",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J3L",
+        "sources": "PegaCS",
+        "sourceSystems": [
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Qlik Sense"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000PMK"
+            }
+        ],
+        "connection": "Migration Monitoring",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "28/06/2018",
+        "description": "Migration Monitoring",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000J3T",
+        "sources": "PegaCS",
+        "sourceSystems": [
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Qlikview"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KLM"
+            }
+        ],
+        "connection": "Module Map",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "28/06/2018",
+        "description": "Module Map",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000HRV",
+        "sources": "PegaCS",
+        "sourceSystems": [
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "PegaCS to PSA Resource Planning passing Projects",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "28/03/2018",
+        "description": "PegaCS to PSA Resource Planning passing Projects",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000J3J",
+        "sources": "PegaCS",
+        "sourceSystems": [
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Mxjira"
+            },
+            {
+                "name": "Peoplesoft MxCRM"
+            },
+            {
+                "name": "ServiceNow"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHT"
+            },
+            {
+                "barometerNo": "071800000LJD"
+            },
+            {
+                "barometerNo": "071800000PQ7"
+            }
+        ],
+        "connection": "Project",
+        "type": "Web Service",
+        "connectionType": "ESB",
+        "pattern": "API Call",
+        "transport": "HTTP",
+        "data": [
+            {
+                "name": "Project"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002W2"
+            }
+        ],
+        "created": "28/06/2018",
+        "description": "Project",
+        "allDataBns": [
+            {
+                "bn": "0744000002W2",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000JWC",
+        "sources": "PegaCS",
+        "sourceSystems": [
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "connection": "Project",
+        "type": "Web Service",
+        "connectionType": "ESB",
+        "pattern": "API Call",
+        "transport": "HTTP",
+        "data": [
+            {
+                "name": "Project"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002W2"
+            }
+        ],
+        "created": "15/03/2019",
+        "description": "Reading List of Client Managers",
+        "allDataBns": [
+            {
+                "bn": "0744000002W2",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J3V",
+        "sources": "PegaCS",
+        "sourceSystems": [
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Azure Active Directory"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000PNF"
+            }
+        ],
+        "connection": "SecurityGroup, SecurityGroupMember",
+        "type": "Web Service",
+        "connectionType": "ESB",
+        "pattern": "API Call",
+        "transport": "HTTP",
+        "data": [
+            {
+                "name": "SecurityGroup"
+            },
+            {
+                "name": "SecurityGroupMember"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003H0"
+            },
+            {
+                "barometerNo": "0744000003GZ"
+            }
+        ],
+        "created": "28/06/2018",
+        "description": "SecurityGroup",
+        "allDataBns": [
+            {
+                "bn": "0744000003GZ",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000003H0",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J4R",
+        "sources": "PegaCS.UserAdminTool",
+        "sourceSystems": [
+            {
+                "name": "PegaCS.UserAdminTool"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000PQ8"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Azure Active Directory"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000PNF"
+            }
+        ],
+        "connection": "SecurityGroupMember",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "API Call",
+        "transport": "HTTP",
+        "data": [
+            {
+                "name": "SecurityGroupMember"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003GZ"
+            }
+        ],
+        "created": "22/08/2018",
+        "description": "Add or remove a user in security groups",
+        "allDataBns": [
+            {
+                "bn": "0744000003GZ",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQR",
+        "sources": "PeopleSoft Defect Management",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft Defect Management"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LN9"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Silk Central"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KLS"
+            }
+        ],
+        "connection": "Builds",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Builds"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002Z6"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft Defect Management to Silk Test Management passing Builds",
+        "allDataBns": [
+            {
+                "bn": "0744000002Z6",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HRG",
+        "sources": "PeopleSoft Defect Management",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft Defect Management"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LN9"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "GQAF.Version Validation Management"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHN"
+            }
+        ],
+        "connection": "Defect",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Defect"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZF"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft Defect Management to GQAF Test Management passing Defect",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZF",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000JWG",
+        "sources": "PeopleSoft Defect Management",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft Defect Management"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LN9"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PegaCS.Projects"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LXB"
+            }
+        ],
+        "connection": "Version Planning",
+        "type": "Web Service",
+        "connectionType": "ESB",
+        "pattern": "API Call",
+        "transport": "HTTP",
+        "data": [
+            {
+                "name": "Version Planning"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002WL"
+            }
+        ],
+        "created": "15/03/2019",
+        "description": "Version Planning",
+        "allDataBns": [
+            {
+                "bn": "0744000002WL",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQ0",
+        "sources": "PeopleSoft Defect Management",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft Defect Management"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LN9"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PegaCS"
+            },
+            {
+                "name": "PegaCS.ModuleMap"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            },
+            {
+                "barometerNo": "071800000LHV"
+            }
+        ],
+        "connection": "Version, Versions",
+        "type": "Web Service",
+        "connectionType": "ESB",
+        "pattern": "API Call",
+        "transport": "",
+        "data": [
+            {
+                "name": "Version"
+            },
+            {
+                "name": "Versions"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003BP"
+            },
+            {
+                "barometerNo": "0744000002WF"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft Defect Management to Modulemap passing Version",
+        "allDataBns": [
+            {
+                "bn": "0744000003BP",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000002WF",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQM",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Client Invoices",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Client Invoices"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002WC"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to PSA Resource Planning passing Invoice",
+        "allDataBns": [
+            {
+                "bn": "0744000002WC",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQX",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PEGA SFA.Result Management"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ5"
+            }
+        ],
+        "connection": "Client Invoices",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Client Invoices"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002WC"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to PEGASFA Result Management passing Invoices",
+        "allDataBns": [
+            {
+                "bn": "0744000002WC",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HRF",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SAGE"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ8"
+            }
+        ],
+        "connection": "Client Invoices, Customer, Customer Address, Employee (External), Employee (Internal), Project, Sales Invoice",
+        "type": "File",
+        "connectionType": null,
+        "pattern": "Send/Receive",
+        "transport": "",
+        "data": [
+            {
+                "name": "Client Invoices"
+            },
+            {
+                "name": "Customer"
+            },
+            {
+                "name": "Customer Address"
+            },
+            {
+                "name": "Employee (External)"
+            },
+            {
+                "name": "Employee (Internal)"
+            },
+            {
+                "name": "Project"
+            },
+            {
+                "name": "Sales Invoice"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002WC"
+            },
+            {
+                "barometerNo": "0744000002Z8"
+            },
+            {
+                "barometerNo": "0744000003F6"
+            },
+            {
+                "barometerNo": "0744000003C2"
+            },
+            {
+                "barometerNo": "0744000002ZG"
+            },
+            {
+                "barometerNo": "0744000002W2"
+            },
+            {
+                "barometerNo": "074400000300"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to SAGE passing Sales Invoice",
+        "allDataBns": [
+            {
+                "bn": "0744000003F6",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000002WC",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000002ZG",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000002W2",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000002Z8",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "074400000300",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000003C2",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HR4",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MXAPPS"
+            },
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000L9D"
+            },
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "connection": "Contract",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Contract"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZB"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to PEGASFA Account passing Contract",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZB",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HRB",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SAGE"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ8"
+            }
+        ],
+        "connection": "Contract",
+        "type": "File",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Contract"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZB"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to SAGE passing Contract",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZB",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQB",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Customer",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Customer"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002Z8"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to PSA Resource Planning passing Company",
+        "allDataBns": [
+            {
+                "bn": "0744000002Z8",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HPW",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Peoplesoft MxCRM"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJD"
+            }
+        ],
+        "connection": "Customer",
+        "type": "",
+        "connectionType": "PointToPoint",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Customer"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002Z8"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to EM passing Project",
+        "allDataBns": [
+            {
+                "bn": "0744000002Z8",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000JW7",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Peoplesoft MxCRM"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJD"
+            }
+        ],
+        "connection": "Instance",
+        "type": "Database",
+        "connectionType": null,
+        "pattern": "Database",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "15/03/2019",
+        "description": "Instance",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000HQZ",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PEGA SFA.Result Management"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ5"
+            }
+        ],
+        "connection": "Milestones",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Milestones"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002VX"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to PEGASFA Result Management passing Milestones",
+        "allDataBns": [
+            {
+                "bn": "0744000002VX",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQN",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Peoplesoft ERP to PSA Resource Planning passing Milestones",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to PSA Resource Planning passing Milestones",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000JWH",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PegaCS.Projects"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LXB"
+            }
+        ],
+        "connection": "Project Security",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "API Call",
+        "transport": "",
+        "data": [
+            {
+                "name": "Project Security"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002W6"
+            }
+        ],
+        "created": "15/03/2019",
+        "description": "Project Security",
+        "allDataBns": [
+            {
+                "bn": "0744000002W6",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HR6",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SAGE"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ8"
+            }
+        ],
+        "connection": "Project, Projects",
+        "type": "File",
+        "connectionType": null,
+        "pattern": "Send/Receive",
+        "transport": "",
+        "data": [
+            {
+                "name": "Project"
+            },
+            {
+                "name": "Projects"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002W2"
+            },
+            {
+                "barometerNo": "0744000002ZH"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "PeopleSoft ERP to SAGE passing Project",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZH",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000002W2",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HRR",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Peoplesoft MxCRM"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJD"
+            }
+        ],
+        "connection": "SFA to MxCRM Case Management passing Instance",
+        "type": "",
+        "connectionType": "DBLink",
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "28/03/2018",
+        "description": "SFA to MxCRM Case Management passing Instance",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000HQP",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Sites",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Sites"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002VW"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to PSA Resource Planning passing Sites",
+        "allDataBns": [
+            {
+                "bn": "0744000002VW",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HR3",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PEGA SFA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ6"
+            }
+        ],
+        "connection": "Sites",
+        "type": "",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Sites"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002VW"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to PEGASFA Account passing Site",
+        "allDataBns": [
+            {
+                "bn": "0744000002VW",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQL",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Task",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Task"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "074400000303"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to PSA Resource Planning passing Task",
+        "allDataBns": [
+            {
+                "bn": "074400000303",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HRQ",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Task Assignement",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Task Assignement"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "074400000304"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to PSA Resource Planning passing Task Assignment",
+        "allDataBns": [
+            {
+                "bn": "074400000304",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQQ",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Time Entry",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Time Entry"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "074400000306"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to PSA Resource Planning passing Time Entry",
+        "allDataBns": [
+            {
+                "bn": "074400000306",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQ4",
+        "sources": "PeopleSoft ERP",
+        "sourceSystems": [
+            {
+                "name": "PeopleSoft ERP"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LHZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MXAPPS.Projects"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000L9G"
+            }
+        ],
+        "connection": "Time Reports",
+        "type": "Web Service",
+        "connectionType": "DBLink",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Time Reports"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "074400000307"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft ERP to MXAPP Projects passing Time Reports",
+        "allDataBns": [
+            {
+                "bn": "074400000307",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J2V",
+        "sources": "Perforce",
+        "sourceSystems": [
+            {
+                "name": "Perforce"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLJ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "GQAF.Production"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHM"
+            }
+        ],
+        "connection": "Changelists",
+        "type": "Database",
+        "connectionType": null,
+        "pattern": "Database",
+        "transport": "JDBC",
+        "data": [
+            {
+                "name": "Changelists"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002WD"
+            }
+        ],
+        "created": "16/05/2018",
+        "description": "Changelists",
+        "allDataBns": [
+            {
+                "bn": "0744000002WD",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HDS",
+        "sources": "Perforce",
+        "sourceSystems": [
+            {
+                "name": "Perforce"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLJ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MxCRM.CaseManagement"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJL"
+            }
+        ],
+        "connection": "Fixes",
+        "type": "Direct Call",
+        "connectionType": "ESB",
+        "pattern": "Client/Server",
+        "transport": "",
+        "data": [
+            {
+                "name": "Fixes"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002WK"
+            }
+        ],
+        "created": "26/04/2017",
+        "description": "Perforce To PeopleSoft CRM",
+        "allDataBns": [
+            {
+                "bn": "0744000002WK",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQS",
+        "sources": "Perforce",
+        "sourceSystems": [
+            {
+                "name": "Perforce"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLJ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "GQAF.Version Management"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHR"
+            }
+        ],
+        "connection": "Version, Versions",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Version"
+            },
+            {
+                "name": "Versions"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003BP"
+            },
+            {
+                "barometerNo": "0744000002WF"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Peoplesoft Defect Management to Silk Test Management passing Versions",
+        "allDataBns": [
+            {
+                "bn": "0744000003BP",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000002WF",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000K08",
+        "sources": "RPM",
+        "sourceSystems": [
+            {
+                "name": "RPM"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LMZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "ServiceNow"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000PQ7"
+            }
+        ],
+        "connection": "Machines",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "21/03/2019",
+        "description": "Machines",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000HPV",
+        "sources": "RPM",
+        "sourceSystems": [
+            {
+                "name": "RPM"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LMZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MXEM"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHJ"
+            }
+        ],
+        "connection": "RPM to EM passing Project",
+        "type": "",
+        "connectionType": "DBLink",
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "28/03/2018",
+        "description": "RPM to EM passing Project",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000J5B",
+        "sources": "SagePaie X3 People",
+        "sourceSystems": [
+            {
+                "name": "SagePaie X3 People"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000PPT"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SAGE"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ8"
+            }
+        ],
+        "connection": "Bank information",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "05/10/2018",
+        "description": "Bank information",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000J59",
+        "sources": "SagePaie X3 People",
+        "sourceSystems": [
+            {
+                "name": "SagePaie X3 People"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000PPT"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SAGE"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ8"
+            }
+        ],
+        "connection": "Journal entries",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "05/10/2018",
+        "description": "Journal entries",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000J3S",
+        "sources": "Selenium",
+        "sourceSystems": [
+            {
+                "name": "Selenium"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000PM6"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "PegaCS"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJK"
+            }
+        ],
+        "connection": "Acceptance Tests",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [],
+        "dataBns": [],
+        "created": "28/06/2018",
+        "description": "Acceptance Tests",
+        "allDataBns": []
+    },
+    {
+        "barometerNo": "070700000J4P",
+        "sources": "ServiceNow",
+        "sourceSystems": [
+            {
+                "name": "ServiceNow"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000PQ7"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Itjira"
+            },
+            {
+                "name": "Mxjira"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KLK"
+            },
+            {
+                "barometerNo": "071800000LHT"
+            }
+        ],
+        "connection": "Issues",
+        "type": "Web Service",
+        "connectionType": "ESB",
+        "pattern": "API Call",
+        "transport": "HTTP",
+        "data": [
+            {
+                "name": "Issues"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002WQ"
+            }
+        ],
+        "created": "22/08/2018",
+        "description": "Tasks to Issues Synchronisation",
+        "allDataBns": [
+            {
+                "bn": "0744000002WQ",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J2Q",
+        "sources": "SF.Employee",
+        "sourceSystems": [
+            {
+                "name": "SF.Employee"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LN3"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SF.Learning"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000PLV"
+            }
+        ],
+        "connection": "Case, Employee (Internal)",
+        "type": "File",
+        "connectionType": null,
+        "pattern": "Send/Receive",
+        "transport": "FTP",
+        "data": [
+            {
+                "name": "Case"
+            },
+            {
+                "name": "Employee (Internal)"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003GH"
+            },
+            {
+                "barometerNo": "0744000002ZG"
+            }
+        ],
+        "created": "09/05/2018",
+        "description": "Internal users",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZG",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000003GH",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQ2",
+        "sources": "SF.Employee, SF.Team",
+        "sourceSystems": [
+            {
+                "name": "SF.Employee"
+            },
+            {
+                "name": "SF.Team"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000LN3"
+            },
+            {
+                "barometerNo": "071800000LN4"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MXAPPS.ORG"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KLB"
+            }
+        ],
+        "connection": "Employee (Internal)",
+        "type": "",
+        "connectionType": "php.interface",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Employee (Internal)"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZG"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Success Factors to MXAPP.ORG passing Employee (Internal)",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZG",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J2N",
+        "sources": "SF.Learning",
+        "sourceSystems": [
+            {
+                "name": "SF.Learning"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000PLV"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SharePoint"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJZ"
+            }
+        ],
+        "connection": "Trainings",
+        "type": "File",
+        "connectionType": null,
+        "pattern": "Send/Receive",
+        "transport": "FTP",
+        "data": [
+            {
+                "name": "Trainings"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "07440000038V"
+            }
+        ],
+        "created": "09/05/2018",
+        "description": "Extraction of training sessions from Learning module",
+        "allDataBns": [
+            {
+                "bn": "07440000038V",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000KF0",
+        "sources": "SharePoint",
+        "sourceSystems": [
+            {
+                "name": "SharePoint"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KJZ"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SF.Learning"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000PLV"
+            }
+        ],
+        "connection": "Documents",
+        "type": "Direct Call",
+        "connectionType": null,
+        "pattern": "Request/Reply",
+        "transport": "HTTPS",
+        "data": [
+            {
+                "name": "Documents"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002WM"
+            }
+        ],
+        "created": "29/07/2019",
+        "description": "Link a document from learning to a KB content",
+        "allDataBns": [
+            {
+                "bn": "0744000002WM",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HR9",
+        "sources": "Success Factors",
+        "sourceSystems": [
+            {
+                "name": "Success Factors"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLC"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SAGE"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJ8"
+            }
+        ],
+        "connection": "Employee (Internal)",
+        "type": "",
+        "connectionType": null,
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Employee (Internal)"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZG"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Success Factors to SAGE passing Employee",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZG",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J2R",
+        "sources": "Success Factors",
+        "sourceSystems": [
+            {
+                "name": "Success Factors"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLC"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Talend"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KLG"
+            }
+        ],
+        "connection": "Employee (Internal), Recruiting, Trainings",
+        "type": "Database",
+        "connectionType": null,
+        "pattern": "Send/Receive",
+        "transport": "FTP",
+        "data": [
+            {
+                "name": "Employee (Internal)"
+            },
+            {
+                "name": "Recruiting"
+            },
+            {
+                "name": "Trainings"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZG"
+            },
+            {
+                "barometerNo": "07440000038W"
+            },
+            {
+                "barometerNo": "07440000038V"
+            }
+        ],
+        "created": "09/05/2018",
+        "description": "Data from Employee Central, Learning and Recruiting",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZG",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "07440000038W",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "07440000038V",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQH",
+        "sources": "Success Factors",
+        "sourceSystems": [
+            {
+                "name": "Success Factors"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLC"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Resource (Internal)",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Resource (Internal)"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000002ZZ"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Success Factors to PSA Resource Planning passing Resources (Internal)",
+        "allDataBns": [
+            {
+                "bn": "0744000002ZZ",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQK",
+        "sources": "Success Factors",
+        "sourceSystems": [
+            {
+                "name": "Success Factors"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLC"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "Changepoint PSA"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KJJ"
+            }
+        ],
+        "connection": "Skill",
+        "type": "",
+        "connectionType": "Talend",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Skill"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "074400000302"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Success Factors to PSA Resource Planning passing Skill",
+        "allDataBns": [
+            {
+                "bn": "074400000302",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000HQ3",
+        "sources": "Success Factors",
+        "sourceSystems": [
+            {
+                "name": "Success Factors"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLC"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MXAPPS.ORG"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000KLB"
+            }
+        ],
+        "connection": "Teams",
+        "type": "",
+        "connectionType": "DBLink",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "Teams"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "074400000305"
+            }
+        ],
+        "created": "28/03/2018",
+        "description": "Success Factors to MXAPP.ORG passing Teams",
+        "allDataBns": [
+            {
+                "bn": "074400000305",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J2W",
+        "sources": "SVN",
+        "sourceSystems": [
+            {
+                "name": "SVN"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000PM3"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "GQAF.Deploy and Test"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LHK"
+            }
+        ],
+        "connection": "ENVs, TPKs",
+        "type": "File",
+        "connectionType": null,
+        "pattern": "Staged File",
+        "transport": "HTTP",
+        "data": [
+            {
+                "name": "ENVs"
+            },
+            {
+                "name": "TPKs"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "07440000039T"
+            },
+            {
+                "barometerNo": "0744000003DM"
+            }
+        ],
+        "created": "16/05/2018",
+        "description": "GQAF to read data from SVN related to ENVs & TPKs",
+        "allDataBns": [
+            {
+                "bn": "07440000039T",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000003DM",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000JWD",
+        "sources": "Talend",
+        "sourceSystems": [
+            {
+                "name": "Talend"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000KLG"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "SF.Learning"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000PLV"
+            }
+        ],
+        "connection": "FFB Learning Histories, FFB trainings",
+        "type": "Database",
+        "connectionType": "ESB",
+        "pattern": "",
+        "transport": "",
+        "data": [
+            {
+                "name": "FFB Learning Histories"
+            },
+            {
+                "name": "FFB trainings"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003KX"
+            },
+            {
+                "barometerNo": "0744000003KW"
+            }
+        ],
+        "created": "15/03/2019",
+        "description": "FFB Learning History",
+        "allDataBns": [
+            {
+                "bn": "0744000003KX",
+                "qualifier": "Related To"
+            },
+            {
+                "bn": "0744000003KW",
+                "qualifier": "Related To"
+            }
+        ]
+    },
+    {
+        "barometerNo": "070700000J2X",
+        "sources": "Test Data Studio",
+        "sourceSystems": [
+            {
+                "name": "Test Data Studio"
+            }
+        ],
+        "sourceSystemBns": [
+            {
+                "barometerNo": "071800000PMH"
+            }
+        ],
+        "targetSystems": [
+            {
+                "name": "MX.3 Testing Tool"
+            }
+        ],
+        "targetSystemBns": [
+            {
+                "barometerNo": "071800000LJV"
+            }
+        ],
+        "connection": "Test Data Items",
+        "type": "Web Service",
+        "connectionType": null,
+        "pattern": "API Call",
+        "transport": "HTTP",
+        "data": [
+            {
+                "name": "Test Data Items"
+            }
+        ],
+        "dataBns": [
+            {
+                "barometerNo": "0744000003F3"
+            }
+        ],
+        "created": "21/05/2018",
+        "description": "MX.3 Testing Tool uses Test Data Items from Test Data Studio as input for automated tests.",
+        "allDataBns": [
+            {
+                "bn": "0744000003F3",
+                "qualifier": "Related To"
+            }
+        ]
+    }
+]

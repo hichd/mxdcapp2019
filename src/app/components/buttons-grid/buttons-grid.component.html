@@ -1,0 +1,58 @@
+<head>
+  <!-- fix boostrap imports -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+
+<div class="applications-filtration">
+  <button 
+    [hidden]=(isEmpty(reuse))
+    (click)="filterByLifecycle(reuse)"
+    id="filter"
+    [ngStyle]="{
+      'background' : colorOf(reuse)
+    }"
+    class="applications-reuse" >
+    {{reuse}}
+  </button>
+  <button 
+    [hidden]=(isEmpty(maintain))
+    id="filter" 
+    (click)="filterByLifecycle(maintain)" 
+    [ngStyle]="{
+      'background' : colorOf(maintain)
+    }"
+    class="applications-maintain" >
+    {{maintain}}
+  </button>
+  <button 
+    [hidden]=(isEmpty(decommissioned))
+    id="filter" 
+    (click)="filterByLifecycle(decommissioned)" 
+    [ngStyle]="{
+      'background' : colorOf(decommissioned)
+    }"
+    class="applications-decommission" >
+    {{decommissioned}}
+  </button>
+  <button 
+    id="filter" 
+    [hidden]=(isEmpty(invest))
+    (click)="filterByLifecycle(invest)" 
+    [ngStyle]="{
+      'background' : colorOf(invest)
+    }"
+    class="applications-invest" >
+    {{invest}}
+  </button>
+  <button 
+    id="reset"
+    (click)="filterByLifecycle(reset)"
+    class="btn btn-default btn-sm">
+    <span class="glyphicon glyphicon-refresh"></span>{{reset}}
+  </button>
+</div>
+<br>

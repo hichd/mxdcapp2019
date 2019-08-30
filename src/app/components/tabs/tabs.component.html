@@ -1,0 +1,14 @@
+
+<div class="chatDiv">
+  <mat-drawer-container class="example-container" autosize>
+      <mat-tab-group dynamicHeight>
+        <mat-tab label="📈 Graphical Visualization">
+          <app-directed-graph></app-directed-graph>
+        </mat-tab>
+        <mat-tab *ngFor="let category of categories" [label]="category.name">
+          <h1 align="center">🌐{{category.name}}</h1>
+          <app-upper-division [category]="category.name"></app-upper-division>
+        </mat-tab>
+      </mat-tab-group>
+  </mat-drawer-container>
+</div>

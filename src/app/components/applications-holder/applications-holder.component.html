@@ -1,0 +1,33 @@
+<mat-accordion>
+    <ng-container *ngFor="let tile of tiles">
+        <mat-expansion-panel 
+            [ngStyle]="{
+                'border-right-color' : tile.color
+            }"
+            (opened)="updateContacts(tile.name)"
+            (closed)="emptyContacts()">
+            <mat-expansion-panel-header>
+                <mat-panel-title class="marquee">
+                    <i class="material-icons">
+                        computer
+                    </i>
+                    <h4>{{tile.name}}</h4>
+                </mat-panel-title>
+                <mat-panel-description>
+                    <!-- Click to {{panelOpenState ? 'open' : 'close'}} -->
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <a 
+            href={{tile.url}}
+            target="_blank"
+            style="text-decoration:none;">
+            <img   src="../../../assets/pictures/barometerIT-16x16.png">
+                System Details
+            </a>
+            <br>
+        </mat-expansion-panel>
+        <!-- <br> -->
+    </ng-container>
+</mat-accordion>
+<br>
+      

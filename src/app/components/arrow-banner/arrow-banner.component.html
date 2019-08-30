@@ -1,0 +1,28 @@
+<div id="wrapper">
+    <div *ngFor="let process of processes">
+        <div
+            id="arrow"
+            class="{{process.color}}">
+            <div>
+                <a
+                    href={{process.url}}
+                    target="_blank"
+                    style="text-decoration:none;">
+                    <h4 id="title">{{process.name}}</h4>                    
+                </a>
+                <ul>
+                    <a
+                        *ngFor="let processGroup of process.children"
+                        href={{processGroup.url}}
+                        target="_blank"
+                        style="text-decoration:none;">
+                        <li >
+                            <h6 id="list-item">{{processGroup.name}}</h6>      
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>

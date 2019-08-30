@@ -1,0 +1,64 @@
+#arrow {
+    width: 500px;
+    height: 280px;
+    position: relative;
+  }
+
+  #wrapper{
+  }
+
+.red {
+    background: red;
+}
+.yellow {
+    background: yellow;
+}
+.green {
+    background: green;
+}
+#title{
+  padding-top:10px;
+    color:white;
+    text-align:center;
+    padding-bottom:10px;
+}
+#list-item{
+  font-weight: bold;
+  padding-top: 5px;
+  color:white;
+}
+ul{
+  list-style-image: url('../../../assets/pictures/barometerIT-16x16.png');
+  padding-bottom: 3px;
+}
+  /* #pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  } */
+  #arrow:before {
+    content: "";
+    position: absolute;
+    right: -140px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 140px solid transparent;
+    border-bottom: 140px solid transparent;
+  }
+
+  .red:before{
+    border-left: 140px solid red;
+  }
+  .yellow:before{
+    border-left: 140px solid yellow;
+  }
+  .green:before{
+    border-left: 140px solid green;
+  }

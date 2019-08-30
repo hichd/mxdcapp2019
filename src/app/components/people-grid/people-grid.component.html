@@ -1,0 +1,22 @@
+<div id="inner-grid">
+  <ng-container *ngFor="let tile of tiles">
+      <button *ngIf="tile.url==null"
+      disabled 
+      [ngStyle]="{
+        'border-right-color' : tile.color
+      }">
+          {{tile.name}}
+      </button>
+      <a 
+        href={{tile.url}} 
+        target="_blank"
+        *ngIf="tile.url!=null"
+        [ngStyle]="{
+          'border-right-color' : tile.color
+        }"
+        style="text-decoration:none;"
+        >
+            {{tile.name}}
+      </a>
+  </ng-container>
+</div>

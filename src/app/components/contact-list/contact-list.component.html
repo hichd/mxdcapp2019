@@ -1,0 +1,44 @@
+<mat-list>
+    <h1 mat-subheader>{{category}}'s Contacts</h1>
+    <mat-list-item *ngFor="let people of people">
+        <mat-icon mat-list-icon>perm_identity</mat-icon>
+        <h2 mat-line>            
+            <a
+                href=mailto:{{people.email}}
+                style="text-decoration:none;">
+                {{people.name}}
+            </a>
+        </h2>
+        <p mat-line>
+            <a
+                href={{people.url}}
+                target="_blank"
+                style="text-decoration:none;">
+                <img   src="../../../assets/pictures/barometerIT-16x16.png">
+                {{people.qualifier}} 
+            </a>
+        </p>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <h1 mat-subheader>{{appName}}</h1>
+    <mat-list-item *ngFor="let contact of displaySysContacts">
+        <mat-icon mat-list-icon >perm_identity</mat-icon>
+        <h2 mat-line>
+            <a
+                href=mailto:{{contact.email}}
+                style="text-decoration:none;">
+                {{contact.name}}
+            </a>
+        </h2>
+        <p mat-line>
+            <a
+                href={{contact.url}}
+                target="_blank"
+                style="text-decoration:none;">
+                <img   src="../../../assets/pictures/barometerIT-16x16.png">
+                {{contact.qualifier}} 
+            </a>
+        </p>
+    </mat-list-item>
+</mat-list>
+      

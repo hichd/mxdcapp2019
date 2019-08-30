@@ -1,0 +1,17 @@
+<header class="processes-header">{{processesTitle}}</header>
+<div id="mainProcesses">
+    <app-processes-tree></app-processes-tree>
+</div>
+<header class="people-header">{{peopleTitle}}</header>
+<div id="mainPeople">
+    <app-contact-list 
+    [category]="category" 
+    [people]="people"
+    [displaySysContacts]="displaySysContacts"
+    [appName]="appName"></app-contact-list>
+</div>
+<header class="applications-header">{{applicationsTitle}} {{lifecycStateOfApps}} ({{appsLength}})</header>
+<div id="siteApplications">
+    <app-buttons-grid></app-buttons-grid>
+    <app-applications-holder [tiles]="applications"></app-applications-holder>
+</div>

@@ -1,0 +1,53 @@
+:host{ 
+  display: grid;
+  grid-template-areas:
+    "header1 header2 header3"
+    "processes people applications";
+  grid-template-rows: auto 1fr;  
+  grid-template-columns: 680px 1fr 1fr;
+  grid-row-gap: 0;
+  grid-column-gap: 2px;
+  height: 45vh;
+}
+div{
+  padding: 1.2em;
+  background: white;
+  }
+.processes-header,.people-header,.applications-header{
+  margin: 1em 0 0.5em 0;
+	font-weight: normal;
+	position: relative;
+	text-shadow: 0 -1px rgba(0,0,0,0.6);
+	font-size: 19px;
+	line-height: 40px;
+  /* background: #355681;  */
+  /* background: rgba(53,86,129, 0.8); */
+	background: #0078d7;  
+	border: 3px solid #fff;
+	padding: 5px 15px;
+	color: white;
+	border-radius: 0 10px 0 10px;
+	box-shadow: inset 0 0 5px rgba(53,86,129, 0.5);
+	font-family: 'Muli', sans-serif;
+}
+.processes-header{
+	grid-area: header1;
+}
+.people-header{
+  grid-area: header2;
+}
+.applications-header{
+  grid-area: header3;
+}
+#mainProcesses{ 
+  grid-area: processes;
+  overflow: scroll;
+}
+#mainPeople{ 
+  grid-area: people; 
+  overflow: scroll;
+}
+#siteApplications{ 
+  grid-area: applications;
+  overflow: scroll;
+} 
